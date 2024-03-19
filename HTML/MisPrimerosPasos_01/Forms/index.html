@@ -1,0 +1,291 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+        <h1>
+            <center>
+            VETERINARIA RIWI
+            </center>
+        </h1>
+    </header>
+    <main>
+        <form action="./src/pages/server.html" method="get" enctype="multipart/form-data">   
+            <fieldset>
+                <legend>Datos Basicos de la mascota</legend>
+                <input type="hidden" name="id_mascota" id="id_mascota" value="AFA12">
+                <div>
+                    <label for="nombre_completo">Nombre Completo</label>
+                    <input type="text" name="nombre_completo" placeholder="Ingrese su nombre" id="edad" min="18" max="75">
+                    <br>
+                </div>
+                <br>
+                <div>
+                    <label for="especie">Especie</label>
+                    <select name="especie" id="especie">
+                        <option disabled selected></option>
+                        <option value="canina">Gato</option>
+                        <option value="felina">Perro</option>
+                        <option value="reptil">Lagarto</option>
+                        <option value="bavuino">Vaca</option>
+                    </select>
+                </div>
+                <br>
+
+                <div>
+                    <label for="edad">edad</label>
+                    <input type="date" name="edad"  id="nombre_completo" min="18" max="32">
+                    <input type="time" name="time" id="tiempo">
+                </div>
+                <br>
+                <div>
+                    <label for="genero">Genero Animalito</label>
+                    <br>
+                    <span>
+                        <input type="radio" name="genero" id="genero" value="macho"> Macho
+                        
+                        <input type="radio" name="genero" id="genero" value="Hembra"> Hembra
+                
+                    </span>
+                </div>
+
+                <br>
+                <div>
+
+                    <label for="peculiaridades">Peculiaridades</label>
+                    <br>
+                    <input type="checkbox" name="peculiaridades"
+                    id="peculiaridades"
+                    value="manchas">Manchas
+                    
+                    <input type="checkbox" name="peculiaridades"
+                    id="peculiaridades"
+                    value="Extremidades">Extremidades
+                </div>
+                <br>
+
+                <div>
+                    <label for="color">Colores</label>
+                    <input type="color" name="color" id="color">
+                </div>
+
+                <br>
+                <div>
+                    <label for="comentarios">Comentarios</label><br>
+                    <textarea name="comentarios" id="comentarios" cols="30" rows="10" maxlength="154"></textarea>
+                </div>
+
+                <div>
+                    <label for="tamaño">Tamaño</label>
+                    <input type="range" name="range"  id="range" min="1" max="5" value="1">
+                </div>
+                <br>
+            
+
+
+
+           </fieldset>
+
+           <fieldset>
+            <legend>Datos del propietario</legend>
+            <span>Direccion</span>
+
+            <div>
+                <label for="nombre"></label>
+                <input type="text" name="nombre" placeholder="Ingrese su nombre">
+            </div>
+
+            <div>
+                <label for="foto_perfil">Foto de Perfil</label>
+                <input type="file" name="foto_perfil" id="foto_perfil">
+            </div>
+
+            <div>
+                <label for="foto_Online">Foto de Perfil Onlne</label>
+                <input type="url" name="foto_Online" id="foto_Online">
+            </div>
+
+            <div>
+                <label for="mail">Mail</label>
+                <input type="email" name="mail" id="mail">
+            </div>
+
+
+            <div>
+                <label for="password">Password</label>
+                <input type="password" placeholder="Contraseña123"
+                name="password"
+                id="password" pattern="^^[A-Z]+$">
+            </div>
+
+
+            <div>
+                <label for="pais">País</label>
+                <input list="lista-paises" name="pais" id="pais">
+                <br>
+            </div>
+            
+            <br>
+            <datalist id="lista-paises">
+                <option value="Colombia">Colombia</option>
+                <option value="España">España</option>
+                <option value="Argentina">Argentina</option>
+                <option value="México">México</option>
+                <option value="Francia">Francia</option>
+                <option value="Italia">Italia</option>
+                <option value="Japón">Japón</option>
+                <option value="Australia">Australia</option>
+                <option value="Canadá">Canadá</option>
+                <option value="Sudáfrica">Sudáfrica</option>
+            </datalist>
+           </fieldset>
+
+
+            <br>
+            <button type="reset">Reset</button>
+            <button type="submit">Send</button>
+            <button type="button">Example</button>
+    </main>
+    <footer></footer>    
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro RIWI</title>
+</head>
+<body>
+
+    <header>
+        <h1>
+            <center>
+                Registro RIWI
+            </center>
+        </h1>
+    </header>
+
+
+    <main>
+        <form action="./src/pages/server.html" enctype="multipart/form-data" method="get">
+
+            <fieldset>
+               <legend>Información del Usuario</legend>
+                <div>
+                    <label for="nombre">Nombre :</label>
+                    <input type="text" name="nombre" id="nombre">
+
+                    <label for="apellido">Apellido :</label>
+                    <input type="text" name="apellido" id="apellido">
+                </div>
+                <br>
+
+                <div>
+                    <label for="mail">Mail :</label>
+                    <input type="email" name="mail" id="mail" required>
+                </div>
+                <br>
+
+                <div>
+                    <label for="password">Password :</label>
+                    <input type="password" placeholder="Contraseña123"
+                    name="password"
+                    id="password" pattern="[A-Z0-9]{8,12}" required>
+                </div>
+                <br>
+
+                <div>
+                    <label for="password_confirm">Confirm Password :</label>
+                    <input type="password_confirm"
+                    name="password_confirm"
+                    id="password_confirm" pattern="[A-Z0-9]{8,12}" required>
+                </div>
+                <br>
+
+                <div>
+                    <label for="pais">País :</label>
+                    <input list="lista-paises" name="pais" id="pais">
+                    <br>
+                </div>
+                
+                <br>
+                <datalist id="lista-paises">
+                    <option value="Colombia">Colombia</option>
+                    <option value="España">España</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="México">México</option>
+                    <option value="Francia">Francia</option>
+                    <option value="Italia">Italia</option>
+                    <option value="Japón">Japón</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Canadá">Canadá</option>
+                    <option value="Sudáfrica">Sudáfrica</option>
+                </datalist>
+
+                <div>
+                    <Label for="telefono">Teléfono :</Label>
+                    <input type="tel" name="telefono" id="telofono">
+                </div>
+                <br>
+
+                <div>
+                    <label for="date">Fecha de Nacimiento:</label>
+                    <input type="date" name="date" id="date">
+                </div>
+                <br>
+
+                <div>
+                    <label for="Color_Fav">Color Favorito</label>
+
+                    <input type="color" name="Color_Fav" id="Color_Fav">
+                </div>
+                <br>
+                
+                <div>
+
+                    <label for="foto_perfil">Foto de Perfil</label>
+                    <input type="file" name="foto_perfil" id="foto_perfil">
+                </div>
+
+
+
+        
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Detalles Academicos</legend>
+                <div>
+                 <label for="nvl_academico">Nivel Academico:    </label>
+                    <select name="nvl_academico" id="nvl_academico">
+                        <option disabled selected></option>
+                        <option value="bachillerato">Bachillerato</option>
+                        <option value="tecnica">Tecnica</option>
+                        <option value="tecnologia">Tecnologia</option>
+                        <option value="profesional">Profesional</option>
+                        <option value="otros">Otros</option>
+                    </select>
+                </div>
+
+                <div>
+                    
+                </div>
+            </fieldset>
+
+
+
+
+        </form>
+
+
+
+    </main>
+    <footer></footer>
+    
+</body>
+</html>
